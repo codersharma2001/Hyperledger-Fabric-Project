@@ -1,0 +1,1 @@
+[31m2023-02-04 13:43:20.848 UTC [main] InitCmd -> ERRO 001[0m Cannot run peer because error when setting up MSP of type bccsp from directory /vagrant/peer/multi-org-ca/../../ca/multi-org-ca/client/budget/budget-peer1/msp: Setup error: nil conf reference

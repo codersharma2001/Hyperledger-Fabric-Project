@@ -1,0 +1,120 @@
+[34m2023-02-04 12:37:38.988 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+ Version: 2.1.0
+ Commit SHA: 1bdf97537
+ Go version: go1.14.1
+ OS/Arch: linux/amd64
+ Chaincode:
+  Base Docker Label: org.hyperledger.fabric
+  Docker Namespace: hyperledger
+[34m2023-02-04 12:37:38.990 UTC [peer] getLocalAddress -> INFO 002[0m Auto-detected peer address: 10.0.2.15:7051
+[34m2023-02-04 12:37:38.991 UTC [peer] getLocalAddress -> INFO 003[0m Returning localhost:7051
+[34m2023-02-04 12:37:39.046 UTC [ledgermgmt] NewLedgerMgr -> INFO 004[0m Initializing LedgerMgr
+[34m2023-02-04 12:37:39.106 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 005[0m DB is empty Setting db format as 2.0
+[34m2023-02-04 12:37:39.117 UTC [fsblkstorage] NewProvider -> INFO 006[0m Creating new file ledger directory at /var/ledgers/multi-org-ca/acme/peer1/ledger/ledgersData/chains/chains
+[34m2023-02-04 12:37:39.164 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 007[0m DB is empty Setting db format as 2.0
+[34m2023-02-04 12:37:39.245 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 008[0m DB is empty Setting db format as 2.0
+[34m2023-02-04 12:37:39.256 UTC [ledgermgmt] NewLedgerMgr -> INFO 009[0m Initialized LedgerMgr
+[34m2023-02-04 12:37:39.269 UTC [gossip.service] New -> INFO 00a[0m Initialize gossip with endpoint localhost:7051
+[34m2023-02-04 12:37:39.271 UTC [gossip.gossip] New -> INFO 00b[0m Creating gossip service with self membership of Endpoint: , InternalEndpoint: localhost:7051, PKI-ID: bd44c0be6a9b69e490650d40eee66c945544a2bf478d8081d10d51b97cee8897, Metadata: 
+[33m2023-02-04 12:37:39.276 UTC [gossip.gossip] New -> WARN 00c[0m External endpoint is empty, peer will not be accessible outside of its organization
+[34m2023-02-04 12:37:39.278 UTC [lifecycle] InitializeLocalChaincodes -> INFO 00d[0m Initialized lifecycle cache with 0 already installed chaincodes
+[34m2023-02-04 12:37:39.279 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00f[0m Entering computeChaincodeEndpoint with peerHostname: localhost
+[34m2023-02-04 12:37:39.279 UTC [gossip.gossip] start -> INFO 00e[0m Gossip instance localhost:7051 started
+[34m2023-02-04 12:37:39.281 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 010[0m Exit with ccEndpoint: localhost:7052
+[34m2023-02-04 12:37:39.289 UTC [sccapi] DeploySysCC -> INFO 011[0m deploying system chaincode 'lscc'
+[34m2023-02-04 12:37:39.292 UTC [sccapi] DeploySysCC -> INFO 012[0m deploying system chaincode 'cscc'
+[34m2023-02-04 12:37:39.293 UTC [sccapi] DeploySysCC -> INFO 013[0m deploying system chaincode 'qscc'
+[34m2023-02-04 12:37:39.294 UTC [sccapi] DeploySysCC -> INFO 014[0m deploying system chaincode '_lifecycle'
+[34m2023-02-04 12:37:39.294 UTC [nodeCmd] serve -> INFO 015[0m Deployed system chaincodes
+[34m2023-02-04 12:37:39.295 UTC [discovery] NewService -> INFO 016[0m Created with config TLS: false, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[34m2023-02-04 12:37:39.296 UTC [nodeCmd] registerDiscoveryService -> INFO 017[0m Discovery service activated
+[34m2023-02-04 12:37:39.296 UTC [nodeCmd] serve -> INFO 018[0m Starting peer with ID=[peer1], network ID=[dev], address=[localhost:7051]
+[34m2023-02-04 12:37:39.297 UTC [nodeCmd] serve -> INFO 019[0m Started peer with ID=[peer1], network ID=[dev], address=[localhost:7051]
+[34m2023-02-04 12:37:39.298 UTC [kvledger] LoadPreResetHeight -> INFO 01a[0m Loading prereset height from path [/var/ledgers/multi-org-ca/acme/peer1/ledger/ledgersData/chains]
+[34m2023-02-04 12:37:39.298 UTC [fsblkstorage] preResetHtFiles -> INFO 01b[0m No active channels passed
+[34m2023-02-04 12:37:48.973 UTC [ledgermgmt] CreateLedger -> INFO 01c[0m Creating ledger [airlinechannel] with genesis block
+[34m2023-02-04 12:37:48.983 UTC [fsblkstorage] newBlockfileMgr -> INFO 01d[0m Getting block information from block storage
+[34m2023-02-04 12:37:49.035 UTC [kvledger] CommitLegacy -> INFO 01e[0m [airlinechannel] Committed block [0] with 1 transaction(s) in 37ms (state_validation=6ms block_and_pvtdata_commit=15ms state_commit=6ms) commitHash=[]
+[34m2023-02-04 12:37:49.042 UTC [ledgermgmt] CreateLedger -> INFO 01f[0m Created ledger [airlinechannel] with genesis block
+[34m2023-02-04 12:37:49.046 UTC [gossip.gossip] JoinChan -> INFO 020[0m Joining gossip network of channel airlinechannel with 1 organizations
+[34m2023-02-04 12:37:49.049 UTC [gossip.gossip] learnAnchorPeers -> INFO 021[0m No configured anchor peers of AcmeMSP for channel airlinechannel to learn about
+[34m2023-02-04 12:37:49.056 UTC [gossip.state] NewGossipStateProvider -> INFO 022[0m Updating metadata information for channel airlinechannel, current ledger sequence is at = 0, next expected block is = 1
+[34m2023-02-04 12:37:49.059 UTC [endorser] callChaincode -> INFO 023[0m finished chaincode: cscc duration: 95ms channel= txID=6e3390ed
+[34m2023-02-04 12:37:49.060 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51534 grpc.code=OK grpc.call_duration=99.731641ms
+[34m2023-02-04 12:37:54.290 UTC [endorser] callChaincode -> INFO 025[0m finished chaincode: cscc duration: 0ms channel= txID=7a30ba7a
+[34m2023-02-04 12:37:54.291 UTC [comm.grpc.server] 1 -> INFO 026[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51538 grpc.code=OK grpc.call_duration=1.841482ms
+[34m2023-02-04 12:37:55.060 UTC [gossip.election] beLeader -> INFO 027[0m bd44c0be6a9b69e490650d40eee66c945544a2bf478d8081d10d51b97cee8897 : Becoming a leader
+[34m2023-02-04 12:37:55.061 UTC [gossip.service] func1 -> INFO 028[0m Elected as a leader, starting delivery service for channel airlinechannel
+[34m2023-02-04 12:37:55.061 UTC [deliveryClient] StartDeliverForChannel -> INFO 029[0m This peer will retrieve blocks from ordering service and disseminate to other peers in the organization for channel airlinechannel
+[34m2023-02-04 12:38:47.791 UTC [comm.grpc.server] 1 -> INFO 02a[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2023-02-04T12:38:49.789Z grpc.peer_address=127.0.0.1:51554 grpc.code=OK grpc.call_duration=118.434µs
+[34m2023-02-04 12:38:47.803 UTC [gossip.comm] GossipStream -> INFO 02b[0m Peer 05cffd19e687ebc12fee93e067e38c7390bcf101d7abb4c86a5ad9ccebd5451f (127.0.0.1:51554) probed us
+[34m2023-02-04 12:38:47.811 UTC [comm.grpc.server] 1 -> INFO 02c[0m streaming call completed grpc.service=gossip.Gossip grpc.method=GossipStream grpc.request_deadline=2023-02-04T12:38:57.795Z grpc.peer_address=127.0.0.1:51554 grpc.code=OK grpc.call_duration=15.372413ms
+[34m2023-02-04 12:38:47.825 UTC [comm.grpc.server] 1 -> INFO 02d[0m unary call completed grpc.service=gossip.Gossip grpc.method=Ping grpc.request_deadline=2023-02-04T12:38:49.825Z grpc.peer_address=127.0.0.1:51558 grpc.code=OK grpc.call_duration=43.946µs
+[34m2023-02-04 12:38:59.046 UTC [gossip.channel] reportMembershipChanges -> INFO 02e[0m [[airlinechannel] Membership view has changed. peers went online:  [[ localhost:8051]] , current view:  [[ localhost:8051]]]
+[34m2023-02-04 12:39:02.686 UTC [gossip.election] stopBeingLeader -> INFO 02f[0m bd44c0be6a9b69e490650d40eee66c945544a2bf478d8081d10d51b97cee8897 Stopped being a leader
+[34m2023-02-04 12:39:02.686 UTC [gossip.service] func1 -> INFO 030[0m Renounced leadership, stopping delivery service for channel airlinechannel
+[33m2023-02-04 12:39:02.688 UTC [peer.blocksprovider] func1 -> WARN 031[0m Encountered an error reading from deliver stream: rpc error: code = Canceled desc = context canceled channel=airlinechannel orderer-address=localhost:7050
+[34m2023-02-04 12:39:03.081 UTC [endorser] callChaincode -> INFO 032[0m finished chaincode: _lifecycle duration: 1ms channel=airlinechannel txID=e5ebf277
+[34m2023-02-04 12:39:03.085 UTC [comm.grpc.server] 1 -> INFO 033[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51574 grpc.code=OK grpc.call_duration=5.84292ms
+[34m2023-02-04 12:40:04.637 UTC [lifecycle] InstallChaincode -> INFO 034[0m Successfully installed chaincode with package ID 'gocc6.1.0-1.0:bef11eb48899e51c1291fd96a278a88fdb4d11b458ea1f8a9134fdc694922658'
+[34m2023-02-04 12:40:04.637 UTC [endorser] callChaincode -> INFO 035[0m finished chaincode: _lifecycle duration: 41040ms channel= txID=024fe6ae
+[34m2023-02-04 12:40:04.638 UTC [comm.grpc.server] 1 -> INFO 036[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51582 grpc.code=OK grpc.call_duration=41.179015939s
+[34m2023-02-04 12:40:04.776 UTC [endorser] callChaincode -> INFO 037[0m finished chaincode: _lifecycle duration: 0ms channel= txID=5c4d499c
+[34m2023-02-04 12:40:04.781 UTC [comm.grpc.server] 1 -> INFO 038[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51590 grpc.code=OK grpc.call_duration=5.710022ms
+[34m2023-02-04 12:40:04.897 UTC [lifecycle] ApproveChaincodeDefinitionForOrg -> INFO 039[0m Successfully endorsed chaincode approval with name 'gocc6', package ID 'gocc6.1.0-1.0:bef11eb48899e51c1291fd96a278a88fdb4d11b458ea1f8a9134fdc694922658', on channel 'airlinechannel' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: true), validation info: (plugin: 'vscc', policy: '12202f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: ()}
+[34m2023-02-04 12:40:04.904 UTC [endorser] callChaincode -> INFO 03a[0m finished chaincode: _lifecycle duration: 7ms channel=airlinechannel txID=caa3fec9
+[34m2023-02-04 12:40:04.936 UTC [comm.grpc.server] 1 -> INFO 03b[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51598 grpc.code=OK grpc.call_duration=40.700442ms
+[34m2023-02-04 12:40:06.971 UTC [gossip.privdata] StoreBlock -> INFO 03c[0m [airlinechannel] Received block [1] from buffer
+[34m2023-02-04 12:40:06.973 UTC [committer.txvalidator] Validate -> INFO 03d[0m [airlinechannel] Validated block [1] in 1ms
+[34m2023-02-04 12:40:06.974 UTC [gossip.privdata] prepareBlockPvtdata -> INFO 03e[0m Successfully fetched all eligible collection private write sets for block [1] channel=airlinechannel
+[34m2023-02-04 12:40:07.017 UTC [kvledger] CommitLegacy -> INFO 03f[0m [airlinechannel] Committed block [1] with 1 transaction(s) in 40ms (state_validation=0ms block_and_pvtdata_commit=25ms state_commit=10ms) commitHash=[1e8ee403407e410fe674b28fc5cd435c3fa33a61039b31d4ec12bd5cf1eaeabe]
+[34m2023-02-04 12:40:07.027 UTC [comm.grpc.server] 1 -> INFO 040[0m streaming call completed grpc.service=protos.Deliver grpc.method=DeliverFiltered grpc.request_deadline=2023-02-04T12:40:34.939Z grpc.peer_address=127.0.0.1:51602 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2.087892926s
+[34m2023-02-04 12:40:07.169 UTC [lifecycle] CheckCommitReadiness -> INFO 041[0m Successfully checked commit readiness of chaincode name 'gocc6' on channel 'airlinechannel' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: true), validation info: (plugin: 'vscc', policy: '12202f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: (<nil>)}
+[34m2023-02-04 12:40:07.170 UTC [endorser] callChaincode -> INFO 042[0m finished chaincode: _lifecycle duration: 12ms channel=airlinechannel txID=074b605a
+[34m2023-02-04 12:40:07.171 UTC [comm.grpc.server] 1 -> INFO 043[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51610 grpc.code=OK grpc.call_duration=13.609491ms
+[34m2023-02-04 12:40:07.283 UTC [endorser] callChaincode -> INFO 044[0m finished chaincode: cscc duration: 0ms channel= txID=786be130
+[34m2023-02-04 12:40:07.288 UTC [comm.grpc.server] 1 -> INFO 045[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51618 grpc.code=OK grpc.call_duration=5.95123ms
+[34m2023-02-04 12:40:07.303 UTC [lifecycle] CheckCommitReadiness -> INFO 046[0m Successfully checked commit readiness of chaincode name 'gocc6' on channel 'airlinechannel' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: true), validation info: (plugin: 'vscc', policy: '12202f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: (<nil>)}
+[34m2023-02-04 12:40:07.306 UTC [lifecycle] CommitChaincodeDefinition -> INFO 047[0m Successfully endorsed commit for chaincode name 'gocc6' on channel 'airlinechannel' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: true), validation info: (plugin: 'vscc', policy: '12202f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: (<nil>)}
+[34m2023-02-04 12:40:07.307 UTC [endorser] callChaincode -> INFO 048[0m finished chaincode: _lifecycle duration: 5ms channel=airlinechannel txID=dc976944
+[34m2023-02-04 12:40:07.308 UTC [comm.grpc.server] 1 -> INFO 049[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51618 grpc.code=OK grpc.call_duration=6.772577ms
+[34m2023-02-04 12:40:09.335 UTC [gossip.privdata] StoreBlock -> INFO 04a[0m [airlinechannel] Received block [2] from buffer
+[34m2023-02-04 12:40:09.336 UTC [committer.txvalidator] Validate -> INFO 04b[0m [airlinechannel] Validated block [2] in 0ms
+[34m2023-02-04 12:40:09.337 UTC [gossip.privdata] prepareBlockPvtdata -> INFO 04c[0m Successfully fetched all eligible collection private write sets for block [2] channel=airlinechannel
+[34m2023-02-04 12:40:09.338 UTC [lifecycle] update -> INFO 04d[0m Updating cached definition for chaincode 'gocc6' on channel 'airlinechannel'
+[34m2023-02-04 12:40:09.338 UTC [lifecycle] update -> INFO 04e[0m Chaincode with package ID 'gocc6.1.0-1.0:bef11eb48899e51c1291fd96a278a88fdb4d11b458ea1f8a9134fdc694922658' now available on channel airlinechannel for chaincode definition gocc6:1.0
+[34m2023-02-04 12:40:09.513 UTC [cceventmgmt] HandleStateUpdates -> INFO 04f[0m Channel [airlinechannel]: Handling deploy or update of chaincode [gocc6]
+[34m2023-02-04 12:40:09.559 UTC [kvledger] CommitLegacy -> INFO 050[0m [airlinechannel] Committed block [2] with 1 transaction(s) in 221ms (state_validation=176ms block_and_pvtdata_commit=29ms state_commit=6ms) commitHash=[611205063654a15004dcf91f382daadfa2a19845e99a994b60d06ac045d0cced]
+[34m2023-02-04 12:40:09.592 UTC [comm.grpc.server] 1 -> INFO 051[0m streaming call completed grpc.service=protos.Deliver grpc.method=DeliverFiltered grpc.request_deadline=2023-02-04T12:40:37.311Z grpc.peer_address=127.0.0.1:51622 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2.281099319s
+[34m2023-02-04 12:40:09.870 UTC [lifecycle] QueryChaincodeDefinition -> INFO 052[0m Successfully queried chaincode name 'gocc6' with definition {sequence: 1, endorsement info: (version: '1.0', plugin: 'escc', init required: true), validation info: (plugin: 'vscc', policy: '12202f4368616e6e656c2f4170706c69636174696f6e2f456e646f7273656d656e74'), collections: ()},
+[34m2023-02-04 12:40:09.873 UTC [endorser] callChaincode -> INFO 053[0m finished chaincode: _lifecycle duration: 4ms channel=airlinechannel txID=0ccaae6e
+[34m2023-02-04 12:40:09.874 UTC [comm.grpc.server] 1 -> INFO 054[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51630 grpc.code=OK grpc.call_duration=5.743782ms
+[34m2023-02-04 12:40:10.736 UTC [endorser] callChaincode -> INFO 055[0m finished chaincode: gocc6 duration: 530ms channel=airlinechannel txID=04dfdd8c
+[34m2023-02-04 12:40:10.737 UTC [comm.grpc.server] 1 -> INFO 056[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51638 grpc.code=OK grpc.call_duration=532.345585ms
+[34m2023-02-04 12:40:12.768 UTC [gossip.privdata] StoreBlock -> INFO 057[0m [airlinechannel] Received block [3] from buffer
+[34m2023-02-04 12:40:12.770 UTC [committer.txvalidator] Validate -> INFO 058[0m [airlinechannel] Validated block [3] in 0ms
+[34m2023-02-04 12:40:12.770 UTC [gossip.privdata] prepareBlockPvtdata -> INFO 059[0m Successfully fetched all eligible collection private write sets for block [3] channel=airlinechannel
+[34m2023-02-04 12:40:12.808 UTC [kvledger] CommitLegacy -> INFO 05a[0m [airlinechannel] Committed block [3] with 1 transaction(s) in 36ms (state_validation=0ms block_and_pvtdata_commit=16ms state_commit=10ms) commitHash=[9aadfc1e925d816868d1bc669a748bf8009984aa30d8b76543ffa6dea2560894]
+[34m2023-02-04 12:40:12.815 UTC [comm.grpc.server] 1 -> INFO 05b[0m streaming call completed grpc.service=protos.Deliver grpc.method=DeliverFiltered grpc.request_deadline=2023-02-04T12:40:40.748Z grpc.peer_address=127.0.0.1:51642 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2.0668602s
+[34m2023-02-04 12:40:12.977 UTC [endorser] callChaincode -> INFO 05c[0m finished chaincode: gocc6 duration: 0ms channel=airlinechannel txID=74fe3e8b
+[34m2023-02-04 12:40:12.982 UTC [comm.grpc.server] 1 -> INFO 05d[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51654 grpc.code=OK grpc.call_duration=6.80092ms
+[34m2023-02-04 12:40:13.118 UTC [endorser] callChaincode -> INFO 05e[0m finished chaincode: cscc duration: 4ms channel= txID=5b30db00
+[34m2023-02-04 12:40:13.118 UTC [comm.grpc.server] 1 -> INFO 05f[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51662 grpc.code=OK grpc.call_duration=5.719504ms
+[34m2023-02-04 12:40:13.134 UTC [endorser] callChaincode -> INFO 060[0m finished chaincode: gocc6 duration: 1ms channel=airlinechannel txID=3c435e97
+[34m2023-02-04 12:40:13.138 UTC [comm.grpc.server] 1 -> INFO 061[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51662 grpc.code=OK grpc.call_duration=6.538183ms
+[34m2023-02-04 12:40:15.171 UTC [gossip.privdata] StoreBlock -> INFO 062[0m [airlinechannel] Received block [4] from buffer
+[34m2023-02-04 12:40:15.172 UTC [committer.txvalidator] Validate -> INFO 063[0m [airlinechannel] Validated block [4] in 0ms
+[34m2023-02-04 12:40:15.173 UTC [gossip.privdata] prepareBlockPvtdata -> INFO 064[0m Successfully fetched all eligible collection private write sets for block [4] channel=airlinechannel
+[34m2023-02-04 12:40:15.219 UTC [kvledger] CommitLegacy -> INFO 065[0m [airlinechannel] Committed block [4] with 1 transaction(s) in 44ms (state_validation=0ms block_and_pvtdata_commit=31ms state_commit=8ms) commitHash=[1ed9ef4ec980ea6430bf47f91b10703a04f16e7d1fa0b5a92bfe93556843c0ee]
+[34m2023-02-04 12:40:15.229 UTC [comm.grpc.server] 1 -> INFO 066[0m streaming call completed grpc.service=protos.Deliver grpc.method=DeliverFiltered grpc.request_deadline=2023-02-04T12:40:43.141Z grpc.peer_address=127.0.0.1:51666 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2.087156263s
+[34m2023-02-04 12:40:15.378 UTC [endorser] callChaincode -> INFO 067[0m finished chaincode: gocc6 duration: 0ms channel=airlinechannel txID=741a2bf9
+[34m2023-02-04 12:40:15.383 UTC [comm.grpc.server] 1 -> INFO 068[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51674 grpc.code=OK grpc.call_duration=6.997322ms
+[34m2023-02-04 13:15:43.379 UTC [gossip.privdata] StoreBlock -> INFO 069[0m [airlinechannel] Received block [5] from buffer
+[33m2023-02-04 13:15:43.390 UTC [policies] SignatureSetToValidIdentities -> WARN 06a[0m De-duplicating identity [AcmeMSP7920af67f38fa180bbe2dd9a158c7af7891d4262dc79326b598b0a98ab4ca350] at index 1 in signature set
+[34m2023-02-04 13:15:43.394 UTC [gossip.gossip] JoinChan -> INFO 06b[0m Joining gossip network of channel airlinechannel with 2 organizations
+[34m2023-02-04 13:15:43.417 UTC [gossip.gossip] learnAnchorPeers -> INFO 06c[0m No configured anchor peers of BudgetMSP for channel airlinechannel to learn about
+[34m2023-02-04 13:15:43.418 UTC [gossip.gossip] learnAnchorPeers -> INFO 06d[0m No configured anchor peers of AcmeMSP for channel airlinechannel to learn about
+[34m2023-02-04 13:15:43.420 UTC [committer.txvalidator] Validate -> INFO 06e[0m [airlinechannel] Validated block [5] in 31ms
+[33m2023-02-04 13:15:43.424 UTC [gossip.privdata] getTxInfoFromTransactionBytes -> WARN 06f[0m Invalid transaction type: header type is not an endorser transaction
+[34m2023-02-04 13:15:43.427 UTC [gossip.privdata] prepareBlockPvtdata -> INFO 070[0m Successfully fetched all eligible collection private write sets for block [5] channel=airlinechannel
+[34m2023-02-04 13:15:43.476 UTC [kvledger] CommitLegacy -> INFO 071[0m [airlinechannel] Committed block [5] with 1 transaction(s) in 43ms (state_validation=2ms block_and_pvtdata_commit=27ms state_commit=9ms) commitHash=[96ca56eb563e3bf8f5fa6c7bdf305c95ca7993c6a546be1b1c120240738de0de]

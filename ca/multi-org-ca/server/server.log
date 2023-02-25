@@ -1,0 +1,42 @@
+2023/02/03 15:18:42 [INFO] Configuration file location: /vagrant/ca/multi-org-ca/server/fabric-ca-server-config.yaml
+2023/02/03 15:18:42 [INFO] Starting server in home directory: /vagrant/ca/multi-org-ca/server
+2023/02/03 15:18:42 [WARNING] Unknown provider type: ; metrics disabled
+2023/02/03 15:18:42 [INFO] Server Version: 1.4.6
+2023/02/03 15:18:42 [INFO] Server Levels: &{Identity:2 Affiliation:1 Certificate:1 Credential:1 RAInfo:1 Nonce:1}
+2023/02/03 15:18:42 [WARNING] &{69 The specified CA certificate file /vagrant/ca/multi-org-ca/server/ca-cert.pem does not exist}
+2023/02/03 15:18:42 [INFO] generating key: &{A:ecdsa S:256}
+2023/02/03 15:18:42 [INFO] encoded CSR
+2023/02/03 15:18:42 [INFO] signed certificate with serial number 291916297158805856045839095808454514076692865816
+2023/02/03 15:18:42 [INFO] The CA key and certificate were generated for CA acme-ca
+2023/02/03 15:18:42 [INFO] The key was stored by BCCSP provider 'SW'
+2023/02/03 15:18:42 [INFO] The certificate is at: /vagrant/ca/multi-org-ca/server/ca-cert.pem
+2023/02/03 15:18:42 [INFO] Initialized sqlite3 database at /vagrant/ca/multi-org-ca/server/fabric-ca-server.db
+2023/02/03 15:18:43 [INFO] The issuer key was successfully stored. The public key is at: /vagrant/ca/multi-org-ca/server/IssuerPublicKey, secret key is at: /vagrant/ca/multi-org-ca/server/msp/keystore/IssuerSecretKey
+2023/02/03 15:18:43 [INFO] Idemix issuer revocation public and secret keys were generated for CA 'acme-ca'
+2023/02/03 15:18:43 [INFO] The revocation key was successfully stored. The public key is at: /vagrant/ca/multi-org-ca/server/IssuerRevocationPublicKey, private key is at: /vagrant/ca/multi-org-ca/server/msp/keystore/IssuerRevocationPrivateKey
+2023/02/03 15:18:43 [INFO] Home directory for default CA: /vagrant/ca/multi-org-ca/server
+2023/02/03 15:18:43 [INFO] Operation Server Listening on [::]:37733
+2023/02/03 15:18:43 [INFO] Listening on http://0.0.0.0:7054
+2023/02/03 16:27:04 [INFO] signed certificate with serial number 194792148528462032628112549919939121455017803257
+2023/02/03 16:27:04 [INFO] [::1]:40104 POST /enroll 201 0 "OK"
+2023/02/03 16:36:08 [INFO] [::1]:40106 POST /register 201 0 "OK"
+2023/02/03 16:36:08 [INFO] [::1]:40108 POST /register 201 0 "OK"
+2023/02/03 16:36:08 [INFO] [::1]:40110 POST /register 201 0 "OK"
+2023/02/03 16:36:08 [INFO] signed certificate with serial number 314909897906735385557019622361214982314202266121
+2023/02/03 16:36:08 [INFO] [::1]:40112 POST /enroll 201 0 "OK"
+2023/02/03 16:36:08 [INFO] signed certificate with serial number 668110140628480733249563226207141715897691693803
+2023/02/03 16:36:08 [INFO] [::1]:40114 POST /enroll 201 0 "OK"
+2023/02/03 16:36:08 [INFO] signed certificate with serial number 488351763527207805801470929223675849687182959975
+2023/02/03 16:36:08 [INFO] [::1]:40116 POST /enroll 201 0 "OK"
+2023/02/03 16:48:35 [INFO] [::1]:40118 POST /register 201 0 "OK"
+2023/02/03 16:50:55 [INFO] signed certificate with serial number 9400185648717073967293949904206710061907436336
+2023/02/03 16:50:55 [INFO] [::1]:40120 POST /enroll 201 0 "OK"
+2023/02/03 17:19:33 [INFO] [::1]:40122 POST /register 201 0 "OK"
+2023/02/03 17:19:34 [INFO] signed certificate with serial number 355027214485438673151167152392823752315507531904
+2023/02/03 17:19:34 [INFO] [::1]:40124 POST /enroll 201 0 "OK"
+2023/02/03 17:40:18 [INFO] [::1]:40134 POST /register 201 0 "OK"
+2023/02/03 17:40:19 [INFO] signed certificate with serial number 169830162259067878662894666158898168152798604986
+2023/02/03 17:40:19 [INFO] [::1]:40136 POST /enroll 201 0 "OK"
+2023/02/03 17:52:49 [INFO] [::1]:40158 POST /register 201 0 "OK"
+2023/02/03 17:52:49 [INFO] signed certificate with serial number 396542132476624144122519955323046676266205092398
+2023/02/03 17:52:49 [INFO] [::1]:40160 POST /enroll 201 0 "OK"

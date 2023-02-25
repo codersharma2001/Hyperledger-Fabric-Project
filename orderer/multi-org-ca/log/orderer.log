@@ -1,0 +1,156 @@
+[34m2023-02-04 12:35:52.066 UTC [localconfig] completeInitialization -> INFO 001[0m General.Authentication.TimeWindow unset, setting to 15m0s
+[34m2023-02-04 12:35:52.072 UTC [localconfig] completeInitialization -> INFO 002[0m Kafka.Retry.ShortInterval unset, setting to 1m0s
+[34m2023-02-04 12:35:52.072 UTC [localconfig] completeInitialization -> INFO 003[0m Kafka.Retry.ShortTotal unset, setting to 10m0s
+[34m2023-02-04 12:35:52.073 UTC [localconfig] completeInitialization -> INFO 004[0m Kafka.Retry.LongInterval unset, setting to 10m0s
+[34m2023-02-04 12:35:52.073 UTC [localconfig] completeInitialization -> INFO 005[0m Kafka.Retry.LongTotal unset, setting to 12h0m0s
+[34m2023-02-04 12:35:52.074 UTC [localconfig] completeInitialization -> INFO 006[0m Kafka.Retry.NetworkTimeouts.DialTimeout unset, setting to 30s
+[34m2023-02-04 12:35:52.075 UTC [localconfig] completeInitialization -> INFO 007[0m Kafka.Retry.NetworkTimeouts.ReadTimeout unset, setting to 30s
+[34m2023-02-04 12:35:52.075 UTC [localconfig] completeInitialization -> INFO 008[0m Kafka.Retry.NetworkTimeouts.WriteTimeout unset, setting to 30s
+[34m2023-02-04 12:35:52.076 UTC [localconfig] completeInitialization -> INFO 009[0m Kafka.Retry.Metadata.RetryBackoff unset, setting to 250ms
+[34m2023-02-04 12:35:52.076 UTC [localconfig] completeInitialization -> INFO 00a[0m Kafka.Retry.Metadata.RetryMax unset, setting to 3
+[34m2023-02-04 12:35:52.077 UTC [localconfig] completeInitialization -> INFO 00b[0m Kafka.Retry.Producer.RetryBackoff unset, setting to 100ms
+[34m2023-02-04 12:35:52.077 UTC [localconfig] completeInitialization -> INFO 00c[0m Kafka.Retry.Producer.RetryMax unset, setting to 3
+[34m2023-02-04 12:35:52.078 UTC [localconfig] completeInitialization -> INFO 00d[0m Kafka.Retry.Consumer.RetryBackoff unset, setting to 2s
+[34m2023-02-04 12:35:52.078 UTC [localconfig] completeInitialization -> INFO 00e[0m Kafka.Version unset, setting to 0.10.2.0
+[34m2023-02-04 12:35:52.079 UTC [orderer.common.server] prettyPrintStruct -> INFO 00f[0m Orderer config values:
+	General.ListenAddress = "127.0.0.1"
+	General.ListenPort = 7050
+	General.TLS.Enabled = false
+	General.TLS.PrivateKey = "/vagrant/orderer/multi-org-ca/server.key"
+	General.TLS.Certificate = "/vagrant/orderer/multi-org-ca/server.crt"
+	General.TLS.RootCAs = [/vagrant/orderer/multi-org-ca/ca.crt]
+	General.TLS.ClientAuthRequired = false
+	General.TLS.ClientRootCAs = []
+	General.Cluster.ListenAddress = ""
+	General.Cluster.ListenPort = 0
+	General.Cluster.ServerCertificate = ""
+	General.Cluster.ServerPrivateKey = ""
+	General.Cluster.ClientCertificate = ""
+	General.Cluster.ClientPrivateKey = ""
+	General.Cluster.RootCAs = []
+	General.Cluster.DialTimeout = 5s
+	General.Cluster.RPCTimeout = 7s
+	General.Cluster.ReplicationBufferSize = 20971520
+	General.Cluster.ReplicationPullTimeout = 5s
+	General.Cluster.ReplicationRetryTimeout = 5s
+	General.Cluster.ReplicationBackgroundRefreshInterval = 5m0s
+	General.Cluster.ReplicationMaxRetries = 12
+	General.Cluster.SendBufferSize = 10
+	General.Cluster.CertExpirationWarningThreshold = 168h0m0s
+	General.Cluster.TLSHandshakeTimeShift = 0s
+	General.Keepalive.ServerMinInterval = 1m0s
+	General.Keepalive.ServerInterval = 2h0m0s
+	General.Keepalive.ServerTimeout = 20s
+	General.ConnectionTimeout = 0s
+	General.GenesisMethod = ""
+	General.GenesisFile = ""
+	General.BootstrapMethod = "file"
+	General.BootstrapFile = "/vagrant/orderer/multi-org-ca/airline-genesis.block"
+	General.Profile.Enabled = false
+	General.Profile.Address = ""
+	General.LocalMSPDir = "/vagrant/ca/multi-org-ca/client/orderer/orderer/msp"
+	General.LocalMSPID = "OrdererMSP"
+	General.BCCSP.ProviderName = "SW"
+	General.BCCSP.SwOpts.SecLevel = 256
+	General.BCCSP.SwOpts.HashFamily = "SHA2"
+	General.BCCSP.SwOpts.Ephemeral = true
+	General.BCCSP.SwOpts.FileKeystore.KeyStorePath = ""
+	General.BCCSP.SwOpts.DummyKeystore =
+	General.BCCSP.SwOpts.InmemKeystore =
+	General.Authentication.TimeWindow = 15m0s
+	General.Authentication.NoExpirationChecks = false
+	FileLedger.Location = "/home/vagrant/ledgers/multi-org-ca/orderer/ledger"
+	FileLedger.Prefix = "hyperledger-fabric-ordererledger"
+	Kafka.Retry.ShortInterval = 1m0s
+	Kafka.Retry.ShortTotal = 10m0s
+	Kafka.Retry.LongInterval = 10m0s
+	Kafka.Retry.LongTotal = 12h0m0s
+	Kafka.Retry.NetworkTimeouts.DialTimeout = 30s
+	Kafka.Retry.NetworkTimeouts.ReadTimeout = 30s
+	Kafka.Retry.NetworkTimeouts.WriteTimeout = 30s
+	Kafka.Retry.Metadata.RetryMax = 3
+	Kafka.Retry.Metadata.RetryBackoff = 250ms
+	Kafka.Retry.Producer.RetryMax = 3
+	Kafka.Retry.Producer.RetryBackoff = 100ms
+	Kafka.Retry.Consumer.RetryBackoff = 2s
+	Kafka.Verbose = false
+	Kafka.Version = 0.10.2.0
+	Kafka.TLS.Enabled = false
+	Kafka.TLS.PrivateKey = ""
+	Kafka.TLS.Certificate = ""
+	Kafka.TLS.RootCAs = []
+	Kafka.TLS.ClientAuthRequired = false
+	Kafka.TLS.ClientRootCAs = []
+	Kafka.SASLPlain.Enabled = false
+	Kafka.SASLPlain.User = ""
+	Kafka.SASLPlain.Password = ""
+	Kafka.Topic.ReplicationFactor = 0
+	Debug.BroadcastTraceDir = ""
+	Debug.DeliverTraceDir = ""
+	Consensus = map[SnapDir:/var/hyperledger/production/orderer/etcdraft/snapshot WALDir:/var/hyperledger/production/orderer/etcdraft/wal]
+	Operations.ListenAddress = "127.0.0.1:8443"
+	Operations.TLS.Enabled = false
+	Operations.TLS.PrivateKey = ""
+	Operations.TLS.Certificate = ""
+	Operations.TLS.RootCAs = []
+	Operations.TLS.ClientAuthRequired = false
+	Operations.TLS.ClientRootCAs = []
+	Metrics.Provider = "disabled"
+	Metrics.Statsd.Network = "udp"
+	Metrics.Statsd.Address = "127.0.0.1:8125"
+	Metrics.Statsd.WriteInterval = 30s
+	Metrics.Statsd.Prefix = ""
+[34m2023-02-04 12:35:52.177 UTC [fsblkstorage] NewProvider -> INFO 010[0m Creating new file ledger directory at /home/vagrant/ledgers/multi-org-ca/orderer/ledger/chains
+[34m2023-02-04 12:35:52.192 UTC [orderer.common.server] extractSysChanLastConfig -> INFO 011[0m Bootstrapping because no existing channels
+[34m2023-02-04 12:35:52.206 UTC [fsblkstorage] newBlockfileMgr -> INFO 012[0m Getting block information from block storage
+[33m2023-02-04 12:35:52.228 UTC [orderer.consensus.solo] HandleChain -> WARN 013[0m Use of the Solo orderer is deprecated and remains only for use in test environments but may be removed in the future.
+[34m2023-02-04 12:35:52.232 UTC [orderer.commmon.multichannel] Initialize -> INFO 014[0m Starting system channel 'ordererchannel' with genesis block hash 5531a871b4c5135523e5d745b4478280542eb189b953f6be7a34aab106decb2d and orderer type solo
+[34m2023-02-04 12:35:52.233 UTC [orderer.common.server] Main -> INFO 015[0m Starting orderer:
+ Version: 2.1.0
+ Commit SHA: 1bdf97537
+ Go version: go1.14.1
+ OS/Arch: linux/amd64
+[34m2023-02-04 12:35:52.234 UTC [orderer.common.server] Main -> INFO 016[0m Beginning to serve requests
+[33m2023-02-04 12:37:32.495 UTC [policies] SignatureSetToValidIdentities -> WARN 017[0m De-duplicating identity [AcmeMSP7920af67f38fa180bbe2dd9a158c7af7891d4262dc79326b598b0a98ab4ca350] at index 1 in signature set
+[33m2023-02-04 12:37:32.506 UTC [policies] SignatureSetToValidIdentities -> WARN 018[0m De-duplicating identity [AcmeMSP7920af67f38fa180bbe2dd9a158c7af7891d4262dc79326b598b0a98ab4ca350] at index 1 in signature set
+[34m2023-02-04 12:37:32.525 UTC [fsblkstorage] newBlockfileMgr -> INFO 019[0m Getting block information from block storage
+[34m2023-02-04 12:37:32.531 UTC [comm.grpc.server] 1 -> INFO 01a[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=127.0.0.1:51418 grpc.code=OK grpc.call_duration=40.161264ms
+[33m2023-02-04 12:37:32.551 UTC [orderer.consensus.solo] HandleChain -> WARN 01b[0m Use of the Solo orderer is deprecated and remains only for use in test environments but may be removed in the future.
+[34m2023-02-04 12:37:32.552 UTC [orderer.commmon.multichannel] newChain -> INFO 01c[0m Created and starting new channel airlinechannel
+[33m2023-02-04 12:37:32.580 UTC [common.deliver] Handle -> WARN 01d[0m Error reading from 127.0.0.1:51414: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 12:37:32.581 UTC [comm.grpc.server] 1 -> INFO 01e[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=127.0.0.1:51414 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=98.867034ms
+[33m2023-02-04 12:37:48.831 UTC [common.deliver] Handle -> WARN 01f[0m Error reading from 127.0.0.1:51422: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 12:37:48.832 UTC [comm.grpc.server] 1 -> INFO 020[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=127.0.0.1:51422 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=21.687226ms
+[33m2023-02-04 12:38:56.456 UTC [common.deliver] Handle -> WARN 021[0m Error reading from 127.0.0.1:51454: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 12:38:56.458 UTC [comm.grpc.server] 1 -> INFO 022[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=127.0.0.1:51454 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=18.023299ms
+[34m2023-02-04 12:39:02.688 UTC [comm.grpc.server] 1 -> INFO 023[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=127.0.0.1:51434 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=1m7.617181369s
+[33m2023-02-04 12:40:07.022 UTC [orderer.common.broadcast] Handle -> WARN 024[0m Error reading from 127.0.0.1:51498: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 12:40:07.025 UTC [comm.grpc.server] 1 -> INFO 025[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=127.0.0.1:51498 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=2.121515262s
+[33m2023-02-04 12:40:09.577 UTC [orderer.common.broadcast] Handle -> WARN 026[0m Error reading from 127.0.0.1:51518: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 12:40:09.578 UTC [comm.grpc.server] 1 -> INFO 027[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=127.0.0.1:51518 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=2.271343968s
+[33m2023-02-04 12:40:12.812 UTC [orderer.common.broadcast] Handle -> WARN 028[0m Error reading from 127.0.0.1:51538: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 12:40:12.814 UTC [comm.grpc.server] 1 -> INFO 029[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=127.0.0.1:51538 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=2.608717427s
+[33m2023-02-04 12:40:15.223 UTC [orderer.common.broadcast] Handle -> WARN 02a[0m Error reading from 127.0.0.1:51562: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 12:40:15.226 UTC [comm.grpc.server] 1 -> INFO 02b[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=127.0.0.1:51562 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=2.086232359s
+[33m2023-02-04 12:55:22.144 UTC [common.deliver] Handle -> WARN 02c[0m Error reading from 127.0.0.1:51594: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 12:55:22.145 UTC [comm.grpc.server] 1 -> INFO 02d[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=127.0.0.1:51594 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=21.959531ms
+[33m2023-02-04 13:00:45.493 UTC [policies] SignatureSetToValidIdentities -> WARN 02e[0m De-duplicating identity [AcmeMSP7920af67f38fa180bbe2dd9a158c7af7891d4262dc79326b598b0a98ab4ca350] at index 2 in signature set
+[33m2023-02-04 13:00:45.508 UTC [policies] SignatureSetToValidIdentities -> WARN 02f[0m De-duplicating identity [AcmeMSP7920af67f38fa180bbe2dd9a158c7af7891d4262dc79326b598b0a98ab4ca350] at index 2 in signature set
+[33m2023-02-04 13:00:45.531 UTC [orderer.common.broadcast] Handle -> WARN 030[0m Error reading from 127.0.0.1:51598: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 13:00:45.531 UTC [comm.grpc.server] 1 -> INFO 031[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=127.0.0.1:51598 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=40.421473ms
+[33m2023-02-04 13:01:06.558 UTC [common.deliver] Handle -> WARN 032[0m Error reading from 127.0.0.1:51602: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 13:01:06.558 UTC [comm.grpc.server] 1 -> INFO 033[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=127.0.0.1:51602 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=19.149362ms
+[33m2023-02-04 13:12:38.596 UTC [common.deliver] Handle -> WARN 034[0m Error reading from 127.0.0.1:51606: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 13:12:38.598 UTC [comm.grpc.server] 1 -> INFO 035[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=127.0.0.1:51606 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=18.711801ms
+[33m2023-02-04 13:15:43.322 UTC [policies] SignatureSetToValidIdentities -> WARN 036[0m De-duplicating identity [AcmeMSP7920af67f38fa180bbe2dd9a158c7af7891d4262dc79326b598b0a98ab4ca350] at index 1 in signature set
+[33m2023-02-04 13:15:43.342 UTC [policies] SignatureSetToValidIdentities -> WARN 037[0m De-duplicating identity [AcmeMSP7920af67f38fa180bbe2dd9a158c7af7891d4262dc79326b598b0a98ab4ca350] at index 1 in signature set
+[33m2023-02-04 13:15:43.349 UTC [orderer.common.broadcast] Handle -> WARN 038[0m Error reading from 127.0.0.1:51610: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 13:15:43.358 UTC [comm.grpc.server] 1 -> INFO 039[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=127.0.0.1:51610 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=37.505032ms
+[33m2023-02-04 13:16:08.150 UTC [common.deliver] Handle -> WARN 03a[0m Error reading from 127.0.0.1:51614: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 13:16:08.150 UTC [comm.grpc.server] 1 -> INFO 03b[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=127.0.0.1:51614 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=20.908064ms
+[33m2023-02-04 13:24:15.866 UTC [common.deliver] Handle -> WARN 03c[0m Error reading from 127.0.0.1:51626: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 13:24:15.866 UTC [comm.grpc.server] 1 -> INFO 03d[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=127.0.0.1:51626 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=22.269483ms
+[33m2023-02-04 13:25:08.353 UTC [orderer.common.broadcast] ProcessMessage -> WARN 03e[0m [channel: airlinechannel] Rejecting broadcast of config message from 127.0.0.1:51630 because of error: error applying config update to existing channel 'airlinechannel': error authorizing update: ConfigUpdate for channel '' but envelope for channel 'airlinechannel'
+[34m2023-02-04 13:25:08.358 UTC [comm.grpc.server] 1 -> INFO 03f[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=127.0.0.1:51630 grpc.code=OK grpc.call_duration=5.946985ms
+[33m2023-02-04 13:25:22.471 UTC [common.deliver] Handle -> WARN 040[0m Error reading from 127.0.0.1:51634: rpc error: code = Canceled desc = context canceled
+[34m2023-02-04 13:25:22.471 UTC [comm.grpc.server] 1 -> INFO 041[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=127.0.0.1:51634 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=19.334584ms

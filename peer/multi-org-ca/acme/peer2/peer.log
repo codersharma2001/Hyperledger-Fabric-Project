@@ -1,0 +1,80 @@
+[34m2023-02-04 12:38:47.514 UTC [nodeCmd] serve -> INFO 001[0m Starting peer:
+ Version: 2.1.0
+ Commit SHA: 1bdf97537
+ Go version: go1.14.1
+ OS/Arch: linux/amd64
+ Chaincode:
+  Base Docker Label: org.hyperledger.fabric
+  Docker Namespace: hyperledger
+[34m2023-02-04 12:38:47.516 UTC [peer] getLocalAddress -> INFO 002[0m Auto-detected peer address: 10.0.2.15:8051
+[34m2023-02-04 12:38:47.517 UTC [peer] getLocalAddress -> INFO 003[0m Returning localhost:8051
+[34m2023-02-04 12:38:47.545 UTC [ledgermgmt] NewLedgerMgr -> INFO 004[0m Initializing LedgerMgr
+[34m2023-02-04 12:38:47.617 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 005[0m DB is empty Setting db format as 2.0
+[34m2023-02-04 12:38:47.625 UTC [fsblkstorage] NewProvider -> INFO 006[0m Creating new file ledger directory at /var/ledgers/multi-org-ca/acme/peer2/ledger/ledgersData/chains/chains
+[34m2023-02-04 12:38:47.669 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 007[0m DB is empty Setting db format as 2.0
+[34m2023-02-04 12:38:47.753 UTC [leveldbhelper] openDBAndCheckFormat -> INFO 008[0m DB is empty Setting db format as 2.0
+[34m2023-02-04 12:38:47.764 UTC [ledgermgmt] NewLedgerMgr -> INFO 009[0m Initialized LedgerMgr
+[34m2023-02-04 12:38:47.775 UTC [gossip.service] New -> INFO 00a[0m Initialize gossip with endpoint localhost:8051
+[34m2023-02-04 12:38:47.781 UTC [gossip.gossip] New -> INFO 00b[0m Creating gossip service with self membership of Endpoint: , InternalEndpoint: localhost:8051, PKI-ID: 05cffd19e687ebc12fee93e067e38c7390bcf101d7abb4c86a5ad9ccebd5451f, Metadata: 
+[33m2023-02-04 12:38:47.783 UTC [gossip.gossip] New -> WARN 00c[0m External endpoint is empty, peer will not be accessible outside of its organization
+[34m2023-02-04 12:38:47.784 UTC [lifecycle] InitializeLocalChaincodes -> INFO 00d[0m Initialized lifecycle cache with 0 already installed chaincodes
+[34m2023-02-04 12:38:47.790 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 00f[0m Entering computeChaincodeEndpoint with peerHostname: localhost
+[34m2023-02-04 12:38:47.793 UTC [nodeCmd] computeChaincodeEndpoint -> INFO 010[0m Exit with ccEndpoint: localhost:8052
+[34m2023-02-04 12:38:47.787 UTC [gossip.gossip] start -> INFO 00e[0m Gossip instance localhost:8051 started
+[34m2023-02-04 12:38:47.814 UTC [sccapi] DeploySysCC -> INFO 011[0m deploying system chaincode 'lscc'
+[34m2023-02-04 12:38:47.821 UTC [sccapi] DeploySysCC -> INFO 012[0m deploying system chaincode 'cscc'
+[34m2023-02-04 12:38:47.842 UTC [sccapi] DeploySysCC -> INFO 013[0m deploying system chaincode 'qscc'
+[34m2023-02-04 12:38:47.845 UTC [sccapi] DeploySysCC -> INFO 014[0m deploying system chaincode '_lifecycle'
+[34m2023-02-04 12:38:47.846 UTC [nodeCmd] serve -> INFO 015[0m Deployed system chaincodes
+[34m2023-02-04 12:38:47.848 UTC [discovery] NewService -> INFO 016[0m Created with config TLS: false, authCacheMaxSize: 1000, authCachePurgeRatio: 0.750000
+[34m2023-02-04 12:38:47.849 UTC [nodeCmd] registerDiscoveryService -> INFO 017[0m Discovery service activated
+[34m2023-02-04 12:38:47.849 UTC [nodeCmd] serve -> INFO 018[0m Starting peer with ID=[peer2], network ID=[dev], address=[localhost:8051]
+[34m2023-02-04 12:38:47.850 UTC [nodeCmd] serve -> INFO 019[0m Started peer with ID=[peer2], network ID=[dev], address=[localhost:8051]
+[34m2023-02-04 12:38:47.851 UTC [kvledger] LoadPreResetHeight -> INFO 01a[0m Loading prereset height from path [/var/ledgers/multi-org-ca/acme/peer2/ledger/ledgersData/chains]
+[34m2023-02-04 12:38:47.852 UTC [fsblkstorage] preResetHtFiles -> INFO 01b[0m No active channels passed
+[34m2023-02-04 12:38:56.592 UTC [ledgermgmt] CreateLedger -> INFO 01c[0m Creating ledger [airlinechannel] with genesis block
+[34m2023-02-04 12:38:56.606 UTC [fsblkstorage] newBlockfileMgr -> INFO 01d[0m Getting block information from block storage
+[34m2023-02-04 12:38:56.653 UTC [kvledger] CommitLegacy -> INFO 01e[0m [airlinechannel] Committed block [0] with 1 transaction(s) in 36ms (state_validation=0ms block_and_pvtdata_commit=15ms state_commit=9ms) commitHash=[]
+[34m2023-02-04 12:38:56.661 UTC [ledgermgmt] CreateLedger -> INFO 01f[0m Created ledger [airlinechannel] with genesis block
+[34m2023-02-04 12:38:56.666 UTC [gossip.gossip] JoinChan -> INFO 020[0m Joining gossip network of channel airlinechannel with 1 organizations
+[34m2023-02-04 12:38:56.670 UTC [gossip.gossip] learnAnchorPeers -> INFO 021[0m No configured anchor peers of AcmeMSP for channel airlinechannel to learn about
+[34m2023-02-04 12:38:56.675 UTC [gossip.state] NewGossipStateProvider -> INFO 022[0m Updating metadata information for channel airlinechannel, current ledger sequence is at = 0, next expected block is = 1
+[34m2023-02-04 12:38:56.679 UTC [endorser] callChaincode -> INFO 023[0m finished chaincode: cscc duration: 92ms channel= txID=161cc499
+[34m2023-02-04 12:38:56.681 UTC [comm.grpc.server] 1 -> INFO 024[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51728 grpc.code=OK grpc.call_duration=95.712058ms
+[34m2023-02-04 12:39:01.666 UTC [gossip.channel] reportMembershipChanges -> INFO 025[0m [[airlinechannel] Membership view has changed. peers went online:  [[ localhost:7051]] , current view:  [[ localhost:7051]]]
+[34m2023-02-04 12:39:02.680 UTC [gossip.election] beLeader -> INFO 026[0m 05cffd19e687ebc12fee93e067e38c7390bcf101d7abb4c86a5ad9ccebd5451f : Becoming a leader
+[34m2023-02-04 12:39:02.681 UTC [gossip.service] func1 -> INFO 027[0m Elected as a leader, starting delivery service for channel airlinechannel
+[34m2023-02-04 12:39:02.681 UTC [deliveryClient] StartDeliverForChannel -> INFO 028[0m This peer will retrieve blocks from ordering service and disseminate to other peers in the organization for channel airlinechannel
+[34m2023-02-04 12:40:06.960 UTC [gossip.privdata] StoreBlock -> INFO 029[0m [airlinechannel] Received block [1] from buffer
+[34m2023-02-04 12:40:06.963 UTC [committer.txvalidator] Validate -> INFO 02a[0m [airlinechannel] Validated block [1] in 1ms
+[34m2023-02-04 12:40:06.964 UTC [gossip.privdata] prepareBlockPvtdata -> INFO 02b[0m Successfully fetched all eligible collection private write sets for block [1] channel=airlinechannel
+[34m2023-02-04 12:40:07.003 UTC [kvledger] CommitLegacy -> INFO 02c[0m [airlinechannel] Committed block [1] with 1 transaction(s) in 38ms (state_validation=0ms block_and_pvtdata_commit=24ms state_commit=7ms) commitHash=[1e8ee403407e410fe674b28fc5cd435c3fa33a61039b31d4ec12bd5cf1eaeabe]
+[34m2023-02-04 12:40:09.322 UTC [gossip.privdata] StoreBlock -> INFO 02d[0m [airlinechannel] Received block [2] from buffer
+[34m2023-02-04 12:40:09.324 UTC [committer.txvalidator] Validate -> INFO 02e[0m [airlinechannel] Validated block [2] in 0ms
+[34m2023-02-04 12:40:09.324 UTC [gossip.privdata] prepareBlockPvtdata -> INFO 02f[0m Successfully fetched all eligible collection private write sets for block [2] channel=airlinechannel
+[34m2023-02-04 12:40:09.326 UTC [lifecycle] update -> INFO 030[0m Updating cached definition for chaincode 'gocc6' on channel 'airlinechannel'
+[34m2023-02-04 12:40:09.328 UTC [cceventmgmt] HandleStateUpdates -> INFO 031[0m Channel [airlinechannel]: Handling deploy or update of chaincode [gocc6]
+[34m2023-02-04 12:40:09.382 UTC [kvledger] CommitLegacy -> INFO 032[0m [airlinechannel] Committed block [2] with 1 transaction(s) in 56ms (state_validation=4ms block_and_pvtdata_commit=27ms state_commit=4ms) commitHash=[611205063654a15004dcf91f382daadfa2a19845e99a994b60d06ac045d0cced]
+[34m2023-02-04 12:40:12.761 UTC [gossip.privdata] StoreBlock -> INFO 033[0m [airlinechannel] Received block [3] from buffer
+[34m2023-02-04 12:40:12.762 UTC [committer.txvalidator] Validate -> INFO 034[0m [airlinechannel] Validated block [3] in 0ms
+[34m2023-02-04 12:40:12.763 UTC [gossip.privdata] prepareBlockPvtdata -> INFO 035[0m Successfully fetched all eligible collection private write sets for block [3] channel=airlinechannel
+[34m2023-02-04 12:40:12.817 UTC [kvledger] CommitLegacy -> INFO 036[0m [airlinechannel] Committed block [3] with 1 transaction(s) in 53ms (state_validation=0ms block_and_pvtdata_commit=28ms state_commit=4ms) commitHash=[9aadfc1e925d816868d1bc669a748bf8009984aa30d8b76543ffa6dea2560894]
+[34m2023-02-04 12:40:15.163 UTC [gossip.privdata] StoreBlock -> INFO 037[0m [airlinechannel] Received block [4] from buffer
+[34m2023-02-04 12:40:15.164 UTC [committer.txvalidator] Validate -> INFO 038[0m [airlinechannel] Validated block [4] in 0ms
+[34m2023-02-04 12:40:15.165 UTC [gossip.privdata] prepareBlockPvtdata -> INFO 039[0m Successfully fetched all eligible collection private write sets for block [4] channel=airlinechannel
+[34m2023-02-04 12:40:15.205 UTC [kvledger] CommitLegacy -> INFO 03a[0m [airlinechannel] Committed block [4] with 1 transaction(s) in 39ms (state_validation=0ms block_and_pvtdata_commit=25ms state_commit=5ms) commitHash=[1ed9ef4ec980ea6430bf47f91b10703a04f16e7d1fa0b5a92bfe93556843c0ee]
+[34m2023-02-04 12:40:46.469 UTC [lifecycle] handleChaincodeInstalledWhileLocked -> INFO 03b[0m Installed chaincode with package ID 'gocc6.1.0-1.0:bef11eb48899e51c1291fd96a278a88fdb4d11b458ea1f8a9134fdc694922658' now available on channel airlinechannel for chaincode definition gocc6:1.0
+[34m2023-02-04 12:40:46.663 UTC [lifecycle] InstallChaincode -> INFO 03c[0m Successfully installed chaincode with package ID 'gocc6.1.0-1.0:bef11eb48899e51c1291fd96a278a88fdb4d11b458ea1f8a9134fdc694922658'
+[34m2023-02-04 12:40:46.664 UTC [endorser] callChaincode -> INFO 03d[0m finished chaincode: _lifecycle duration: 31027ms channel= txID=7f10e0b1
+[34m2023-02-04 12:40:46.671 UTC [comm.grpc.server] 1 -> INFO 03e[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51844 grpc.code=OK grpc.call_duration=31.10547563s
+[34m2023-02-04 12:40:47.660 UTC [endorser] callChaincode -> INFO 03f[0m finished chaincode: gocc6 duration: 562ms channel=airlinechannel txID=bc3fbed9
+[34m2023-02-04 12:40:47.662 UTC [comm.grpc.server] 1 -> INFO 040[0m unary call completed grpc.service=protos.Endorser grpc.method=ProcessProposal grpc.peer_address=127.0.0.1:51852 grpc.code=OK grpc.call_duration=564.941065ms
+[34m2023-02-04 13:15:43.376 UTC [gossip.privdata] StoreBlock -> INFO 041[0m [airlinechannel] Received block [5] from buffer
+[33m2023-02-04 13:15:43.383 UTC [policies] SignatureSetToValidIdentities -> WARN 042[0m De-duplicating identity [AcmeMSP7920af67f38fa180bbe2dd9a158c7af7891d4262dc79326b598b0a98ab4ca350] at index 1 in signature set
+[34m2023-02-04 13:15:43.416 UTC [gossip.gossip] JoinChan -> INFO 043[0m Joining gossip network of channel airlinechannel with 2 organizations
+[34m2023-02-04 13:15:43.421 UTC [gossip.gossip] learnAnchorPeers -> INFO 044[0m No configured anchor peers of AcmeMSP for channel airlinechannel to learn about
+[34m2023-02-04 13:15:43.422 UTC [gossip.gossip] learnAnchorPeers -> INFO 045[0m No configured anchor peers of BudgetMSP for channel airlinechannel to learn about
+[34m2023-02-04 13:15:43.423 UTC [committer.txvalidator] Validate -> INFO 046[0m [airlinechannel] Validated block [5] in 44ms
+[33m2023-02-04 13:15:43.426 UTC [gossip.privdata] getTxInfoFromTransactionBytes -> WARN 047[0m Invalid transaction type: header type is not an endorser transaction
+[34m2023-02-04 13:15:43.428 UTC [gossip.privdata] prepareBlockPvtdata -> INFO 048[0m Successfully fetched all eligible collection private write sets for block [5] channel=airlinechannel
+[34m2023-02-04 13:15:43.472 UTC [kvledger] CommitLegacy -> INFO 049[0m [airlinechannel] Committed block [5] with 1 transaction(s) in 42ms (state_validation=0ms block_and_pvtdata_commit=21ms state_commit=14ms) commitHash=[96ca56eb563e3bf8f5fa6c7bdf305c95ca7993c6a546be1b1c120240738de0de]
